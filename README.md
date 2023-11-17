@@ -31,4 +31,14 @@ branch 'main' set up to track 'origin/main'
 Estas variáveis de ambiente devem ser informadas na configuração do seu projeto.
 Seja no build ou seja na configuração do maven
 
+```
 SPRING_BANNER_CHARSET=UTF-8;SPRING_BANNER_LOCATION=classpath:/banner.txt;SPRING_OUTPUT_ANSI_ENABLE=always
+```
+
+### Configuração das variáveis de ambiente no IntelliJ Community
+#### Configuração inicial
+![Alt text](./assets/images/config-env/config01.png)
+#### Opção de configuração das variáveis de sistema
+![Alt text](./assets/images/config-env/config02.png)
+#### Inserindo as variáveis de sistema
+![Alt text](./assets/images/config-env/config03.png)
