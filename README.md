@@ -26,3 +26,9 @@ To github.com:senac-goias/music-project.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'
 ```
+
+### Configuração das variáveis de ambiente
+Estas variáveis de ambiente devem ser informadas na configuração do seu projeto.
+Seja no build ou seja na configuração do maven
+
+SPRING_BANNER_CHARSET=UTF-8;SPRING_BANNER_LOCATION=classpath:/banner.txt;SPRING_OUTPUT_ANSI_ENABLE=always
