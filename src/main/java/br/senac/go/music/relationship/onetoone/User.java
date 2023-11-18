@@ -25,8 +25,11 @@ public class User {
     @Column(name = "EMAIL", nullable = false, length = 100)
     private String email;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    //@OneToOne(cascade = CascadeType.ALL)
     //A diretiva joincolumn está relacionada ao vínculo dos registros (ids) via banco de dados
-    @JoinColumn(name = "address_id", referencedColumnName = "id")
+    //@JoinColumn(name = "address_id", referencedColumnName = "id")
+
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    @PrimaryKeyJoinColumn
     private Address address;
 }

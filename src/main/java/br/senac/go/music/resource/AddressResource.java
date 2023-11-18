@@ -26,6 +26,7 @@ public class AddressResource {
             produces = MediaType.APPLICATION_JSON_VALUE)
     public Address create(@Valid @RequestBody Address address){
         log.info("Acessando a camada de serviço");
+
         return this.addressService.create(address);
     }
 }
