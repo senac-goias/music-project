@@ -10,7 +10,11 @@ public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "ID")
     private Integer id;
+
+    @Column(name = "STREET")
+    private String street;
 
     @OneToOne(mappedBy = "address")
     private User user;
